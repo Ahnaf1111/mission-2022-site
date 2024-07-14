@@ -101,6 +101,53 @@ line-height: 80px;
 font-size: 1.6rem;
 font-weight: 600;
 }
+/* documentation */
+.top{
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+.top-img{
+    position: relative;
+}
+.coding-img{
+    position: relative;
+    z-index: 1;
+}
+.top-img>img{
+    width: 100%;
+}
+
+.circle{
+    width: 227px;
+    height: 227px;
+    position: absolute;
+    bottom: 154px;
+    left: -117px;
+}
+.circle>img{
+    width: 100%;
+}
+.top-text >h4{
+    color: #333;
+font-size: 2.4rem;
+font-weight: 700;
+}
+.down{
+    flex-direction: row-reverse;
+}
+.circle-2{
+    width: 227px;
+    height: 227px;
+    position: absolute;
+    bottom: -100px;
+    right: -117px;
+}
+.circle-2>img{
+    height: 100%;
+    width: 100%;
+}
+
 
 
 
@@ -125,6 +172,21 @@ font-weight: 600;
     /* my mission  */
     .card-container{
         flex-direction: column;
+    }
+    /* documentation */
+    .top{
+        flex-direction: column;
+    }
+    .circle{
+        bottom: 176px;
+        left: 49px;
+    }
+    .circle-2{
+        bottom: -66px;
+        right: 16px;
+    }
+    .down{
+        margin-top: 20px;
     }
 }
 @media screen and (min-width:577px) and (max-width:992px){
