@@ -28,7 +28,7 @@
 .title-primary{
     color: #13103A;
 text-align: center;
-font-size: 3.4rem;
+font-size: 3em;
 font-weight: 700;
 line-height: 70px; /* 145.833% */
 }
@@ -38,6 +38,7 @@ line-height: 70px; /* 145.833% */
 section{
     max-width:1440px ;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 /* hero section */
 .hero{
@@ -77,6 +78,41 @@ line-height: 80px;
 .hero-img>img{
     width: 50%;
 }
+/* my mission section */
+.my-mission-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-container{
+    display: flex;
+    gap: 24px;
+}
+.card{
+    border-radius: 26px;
+    background: rgba(79, 157, 166, 0.10);
+    padding: 33px 13px 43px 32px;
+}
+.card>img{
+    height: 126px;
+    width: 126px;
+}
+.card>h5{
+    color: #000;
+font-size: 1.6rem;
+font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:576px){
     .hero{
         flex-direction: column;
@@ -85,6 +121,10 @@ line-height: 80px;
     }
     .hero-img>img{
         width: 100%;
+    }
+    /* my mission  */
+    .card-container{
+        flex-direction: column;
     }
 }
 @media screen and (min-width:577px) and (max-width:992px){
@@ -105,5 +145,14 @@ line-height: 80px;
     }
     .hero-text> p{
         font-size: 1rem;
+    }
+    /* my mission */
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dcard-3{
+        grid-column: 1 / span 3;
+        margin-right:24px;
     }
 }
